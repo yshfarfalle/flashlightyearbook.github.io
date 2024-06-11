@@ -75,19 +75,55 @@ header #second_section li{
 
 
 
+
+/*---------------내비게이션---------*/
+#i1{
+    position: fixed; 
+    bottom:10%;
+    right:90%;
+
+    /* margin-top: 130px; */
+    text-align: right;
+    padding: 0px 0px;
+}
+#i2{
+    position: fixed; 
+    bottom:10%;
+    right:50%;
+
+    /* margin-top: 195px; */
+    text-align: right;
+    padding: 0px 0px;
+}
+#i3{
+    position: fixed; 
+    bottom:10%;
+    right:5%;
+
+    /* margin-top: 195px; */
+    text-align: right;
+    padding: 0px 0px;
+}
+
+.itext {
+    font-size: 150%; /* 16px의 1.5배인 24px */
+}
+
+
+
 /*--------------- 푸터 -----------------*/
 
 footer {
     text-align: center;
     width:100%;
     bottom:0;
-    height:120px;
-    margin-top: 20px;
+    height:200px;
+    /* margin-top: 20px; */
     /* position: fixed; */
 
 }
 footer #footer_box {
-    height:120px;
+    height:200px;
     width:auto;
     background-color: #521fc1;
     text-decoration: none;
@@ -103,7 +139,7 @@ footer #footer_box {
     padding: 10px 20px; /* Padding inside the button */
     border-radius: 2px; /* Rounded corners */
     transition: color 0.3s; /* Smooth transition for color change */
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 /* footer #footer_btn a:link {
