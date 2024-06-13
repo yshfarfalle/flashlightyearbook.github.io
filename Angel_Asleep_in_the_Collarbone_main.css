@@ -1,0 +1,617 @@
+/*---메인---*/
+
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 14px; /* 화면이 700px 미만일 때 폰트 크기를 12px로 설정 */
+    }
+}
+.main_content {
+    position: relative;
+    max-width: 100%; /* 최대 너비를 100%로 설정하여 화면을 벗어나지 않도록 함 */
+    overflow: hidden; /* 내용이 영역을 벗어날 경우 숨김 */
+}
+
+
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+
+ 
+        font-family: "Song Myung", serif;
+        font-weight: 400;
+        font-style: normal;
+
+      
+    font-size: 7vw; /* 2vw : Viewport width의 2% */
+
+    position: absolute;
+    top: 40%;
+    right: 1%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    /* transform: translate(5%, 30%) rotate(90deg);  */
+    /* transform: rotate(90deg);  */
+    color: white; /* Text color */
+    /* font-size: 700%;  */
+    /* 16px의 7배인 24px */
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: text shadow for better visibility */
+    white-space: nowrap; /* Prevents text from wrapping */
+}.overlay-text2 {
+
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    font-size: 7vw; /* 2vw : Viewport width의 2% */
+
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    /* transform: translate(5%, 30%) rotate(90deg);  */
+    /* transform: rotate(90deg);  */
+    color: white; /* Text color */
+    /* font-size: 700%;  */
+    /* 16px의 7배인 24px */
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: text shadow for better visibility */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+.overlay-text3 {
+
+
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    font-size: 7vw; /* 2vw : Viewport width의 2% */
+
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    /* transform: translate(5%, 30%) rotate(90deg);  */
+    /* transform: rotate(90deg);  */
+    color: white; /* Text color */
+    /* font-size: 700%;  */
+    /* 16px의 7배인 24px */
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: text shadow for better visibility */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+.overlay-text4 {
+
+
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    font-size: 7vw; /* 2vw : Viewport width의 2% */
+
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    /* transform: translate(5%, 30%) rotate(90deg);  */
+    /* transform: rotate(90deg);  */
+    color: white; /* Text color */
+    /* font-size: 700%;  */
+    /* 16px의 7배인 24px */
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: text shadow for better visibility */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+.overlay-text5 {
+
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    
+    font-size: 7vw; /* 2vw : Viewport width의 2% */
+
+    position: absolute;
+    top: 65%;
+    right: 30%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    /* transform: translate(5%, 30%) rotate(90deg);  */
+    /* transform: rotate(90deg);  */
+    color: white; /* Text color */
+    /* font-size: 700%;  */
+    /* 16px의 7배인 24px */
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: text shadow for better visibility */
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+
+
+/*--content 1내용-*/
+
+
+.smalltitle{
+    font-size: 18px; /* 2vw : Viewport width의 2% */
+    flex-grow: 0; /* 고정 너비를 가지도록 설정 */
+    font-weight: bold;
+    padding-bottom: 20px;
+    
+
+}
+
+
+.z1 {
+    width:40%; 
+    float:left; 
+    padding:15px;
+
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    overflow: auto; /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */
+}
+/* Webkit 기반 브라우저용 스크롤바 숨기기 */
+.z1::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox용 스크롤바 숨기기 */
+.z1 {
+    scrollbar-width: none; /* Firefox */
+}
+
+
+section#content1 p {
+    padding:10px;
+    /* font-size: 20px; */
+    font-size: 0.95em;
+    line-height: 200%; /* 줄 간격*/
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    /* 수평 중앙 정렬 */
+    align-items: center; 
+    /* 수직 중앙 정렬 */
+    height: 100vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    background-color: lightgray;
+}
+
+.content1 {
+    display: flex;
+    max-width: 1200px; /* 적절한 최대 너비 설정 */
+    width: 100%; /* 전체 너비를 사용 */
+
+    margin: 0 20px; /* 화면의 가장자리에 닿지 않도록 여백 추가 */
+    
+}
+
+.z2 {
+    width: 60%; /* z1과 합쳐서 100%가 되도록 설정 */
+    display: flex;
+    justify-content: center; /* 이미지 중앙 정렬 */
+    align-items: center; /* 이미지 중앙 정렬 */
+}
+.z2 img {
+    width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+    height: auto; /* 비율에 맞게 이미지 높이 조정 */
+}
+
+
+
+
+
+
+/*--content 2내용-*/
+
+.container1-1 {
+    display: flex;
+    justify-content: center; 
+    /* 수평 중앙 정렬 */
+    align-items: center; 
+    /* 수직 중앙 정렬 */
+    height: 10vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.content2title {
+    font-size: 2vw; /* 2vw : Viewport width의 2% */
+    flex-grow: 0; /* 고정 너비를 가지도록 설정 */
+    font-weight: bold;
+
+}
+
+.container2 {
+    display: flex;
+    justify-content: center; 
+    /* 수평 중앙 정렬 */
+    align-items: center; 
+    /* 수직 중앙 정렬 */
+
+}
+
+.z5, .z6 {
+    flex: 1; /* 내부 콘텐츠를 균등하게 배치 */
+}
+
+.z5 {
+    width:50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 15px;
+    align-items: flex-start; 
+
+
+}
+
+section#content2 p {
+    padding:10px;
+    font-size: 20px;
+    /* font-size: 0.95em; */
+    line-height: 200%; /* 줄 간격*/
+}
+
+.content2 {
+    display: flex;
+    flex-direction: row; /* 가로 방향으로 배치 이거 안 쓰면 문단이 세로로 됨*/
+    max-width: 1200px; /* 적절한 최대 너비 설정 */
+    width: 100%; /* 전체 너비를 사용 */
+
+    margin: 0 20px; /* 화면의 가장자리에 닿지 않도록 여백 추가 */
+}
+
+.z6 {
+    width: 50%; /* z1과 합쳐서 100%가 되도록 설정 */
+    padding: 15px;
+    /* display: flex; */
+    /* justify-content: center;  */
+    /* 이미지 중앙 정렬 */
+    /* align-items: center;  */
+    /* 이미지 중앙 정렬 */
+    
+    
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    overflow: auto; /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */
+}
+
+/* Webkit 기반 브라우저용 스크롤바 숨기기 */
+.z6::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox용 스크롤바 숨기기 */
+.z6 {
+    scrollbar-width: none; /* Firefox */
+
+    
+}
+
+
+
+.z5 img {
+    width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+    height: auto; /* 비율에 맞게 이미지 높이 조정 */
+    align-items: flex-start; 
+
+}
+
+
+/*--content 3내용-*/
+
+.z3 {
+    width:50%; 
+    float:left; 
+    padding:15px;
+
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    overflow: auto; /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */
+}
+/* Webkit 기반 브라우저용 스크롤바 숨기기 */
+.z3::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox용 스크롤바 숨기기 */
+.z3 {
+    scrollbar-width: none; /* Firefox */
+}
+/* Webkit 기반 브라우저용 스크롤바 숨기기 */
+.z3::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox용 스크롤바 숨기기 */
+.z3 {
+    scrollbar-width: none; /* Firefox */
+}
+
+.z3, .z4 {
+    flex: 1; /* 내부 콘텐츠를 균등하게 배치 */
+}
+
+section.z4{
+    align-items: flex-start; 
+
+}
+.z4 {
+    width:50%; 
+    float:left; 
+    padding:15px;
+
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    overflow: auto; /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */
+    
+}
+/* Webkit 기반 브라우저용 스크롤바 숨기기 */
+.z4::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox용 스크롤바 숨기기 */
+.z4 {
+    scrollbar-width: none; /* Firefox */
+}
+/* Webkit 기반 브라우저용 스크롤바 숨기기 */
+.z4::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox용 스크롤바 숨기기 */
+.z4 {
+    scrollbar-width: none; /* Firefox */
+    
+}
+
+
+section#content3 p {
+    padding:10px;
+    font-size: 20px;
+    /* font-size: 0.95em; */
+    line-height: 200%; /* 줄 간격*/
+    
+}
+
+.content3 {
+    display: flex;
+    flex-direction: row; /* 가로 방향으로 배치 이거 안 쓰면 문단이 세로로 됨*/
+
+    max-width: 1200px; /* 적절한 최대 너비 설정 */
+    width: 100%; /* 전체 너비를 사용 */
+
+    margin: 0 20px; /* 화면의 가장자리에 닿지 않도록 여백 추가 */
+}
+
+.z4 {
+    width: 50%; /* z1과 합쳐서 100%가 되도록 설정 */
+    display: flex;
+    justify-content: center; /* 이미지 중앙 정렬 */
+    align-items: center; /* 이미지 중앙 정렬 */
+}
+.z4 img {
+    width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+    height: auto; /* 비율에 맞게 이미지 높이 조정 */
+}
+
+/*--content 4내용-*/
+
+section#content4 p {
+    padding:10px;
+    font-size: 20px;
+    /* font-size: 0.95em; */
+    line-height: 200%; /* 줄 간격*/
+}
+
+.content4 {
+    display: flex;
+    max-width: 1200px; /* 적절한 최대 너비 설정 */
+    width: 100%; /* 전체 너비를 사용 */
+
+    margin: 0 20px; /* 화면의 가장자리에 닿지 않도록 여백 추가 */
+}
+
+
+
+
+
+
+/*------비디오 content5-----*/
+
+.container3 {
+    display: flex;
+    justify-content: center; 
+    /* 수평 중앙 정렬 */
+    align-items: center; 
+    /* 수직 중앙 정렬 */
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+}
+
+
+
+.z7 {
+    width:80%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 15px;
+
+}
+
+section#content5 p {
+    padding:10px;
+    font-size: 20px;
+    /* font-size: 0.95em; */
+    line-height: 200%; /* 줄 간격*/
+}
+
+.content5 {
+    display: flex;
+    flex-direction: row; /* 가로 방향으로 배치 이거 안 쓰면 문단이 세로로 됨*/
+    max-width: 1200px; /* 적절한 최대 너비 설정 */
+    width: 100%; /* 전체 너비를 사용 */
+
+    margin: 0 20px; /* 화면의 가장자리에 닿지 않도록 여백 추가 */
+}
+
+.z8 {
+    width: 20%; /* z1과 합쳐서 100%가 되도록 설정 */
+    padding: 15px;
+    /* display: flex; */
+    /* justify-content: center;  */
+    /* 이미지 중앙 정렬 */
+    /* align-items: center;  */
+    /* 이미지 중앙 정렬 */
+}
+.z7 video {
+    width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+    height: auto; /* 비율에 맞게 이미지 높이 조정 */
+}
+
+
+
+
+    /*z9 z10*/
+
+    .z9 {
+        width:80%;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        padding: 15px;
+        
+        align-items: flex-start; 
+
+    }
+    
+    section#content5 p {
+        padding:10px;
+        font-size: 20px;
+        /* font-size: 0.95em; */
+        line-height: 200%; /* 줄 간격*/
+    }
+    
+    .content5 {
+        display: flex;
+        flex-direction: row; /* 가로 방향으로 배치 이거 안 쓰면 문단이 세로로 됨*/
+        max-width: 1200px; /* 적절한 최대 너비 설정 */
+        width: 100%; /* 전체 너비를 사용 */
+    
+        margin: 0 20px; /* 화면의 가장자리에 닿지 않도록 여백 추가 */
+    }
+    
+    .z10 {
+        width: 20%; /* z1과 합쳐서 100%가 되도록 설정 */
+        padding: 15px;
+        /* display: flex; */
+        /* justify-content: center;  */
+        /* 이미지 중앙 정렬 */
+        /* align-items: center;  */
+        /* 이미지 중앙 정렬 */
+    }
+    .z9 video {
+        width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+        height: auto; /* 비율에 맞게 이미지 높이 조정 */
+    }
+
+
+
+
+
+    /*----포토갤러리-----*/
+
+    .container3 {
+        display: flex;
+        justify-content: center; 
+        /* 수평 중앙 정렬 */
+        align-items: center; 
+        /* 수직 중앙 정렬 */
+        height: 45vh; 
+        /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+        /* overflow: auto;  */
+        /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */
+    
+    }
+
+    .z11, .z12, z13 {
+        flex: 1; /* 내부 콘텐츠를 균등하게 배치 */
+    }
+    
+    .z11 {
+        width:33%;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        padding: 15px;
+    
+    }
+    .z12 {
+        width:33%;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        padding: 15px;
+    
+    }
+    .z13 {
+        width:33%;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        padding: 15px;
+    
+    }
+    section#content2 p {
+        padding:10px;
+        font-size: 20px;
+        /* font-size: 0.95em; */
+        line-height: 200%; /* 줄 간격*/
+    }
+    
+    .content2 {
+        display: flex;
+        flex-direction: row; /* 가로 방향으로 배치 이거 안 쓰면 문단이 세로로 됨*/
+        max-width: 1200px; /* 적절한 최대 너비 설정 */
+        width: 100%; /* 전체 너비를 사용 */
+    
+        margin: 0 20px; /* 화면의 가장자리에 닿지 않도록 여백 추가 */
+    }
+    
+
+    .z11 img {
+        width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+        height: auto; /* 비율에 맞게 이미지 높이 조정 */
+    }
+    .z12 img {
+        width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+        height: auto; /* 비율에 맞게 이미지 높이 조정 */
+    }
+    .z13 img {
+        width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+        height: auto; /* 비율에 맞게 이미지 높이 조정 */
+    }
