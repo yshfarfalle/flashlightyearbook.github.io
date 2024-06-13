@@ -1,6 +1,8 @@
 /*---메인---*/
 
-
+.clear{
+    clear:both;
+}
 .main_content {
     position: relative;
     max-width: 100%; /* 최대 너비를 100%로 설정하여 화면을 벗어나지 않도록 함 */
@@ -15,7 +17,16 @@
     height: auto;
 }
 
+
+
+
 .overlay-text {
+
+        font-family: "Gwendolyn", cursive;
+        font-weight: 700;
+        font-style: normal;
+      
+      
 
     font-size: 7vw; /* 2vw : Viewport width의 2% */
 
@@ -39,7 +50,25 @@
 
 /*--content 1내용-*/
 
-.z1 {width:40%; float:left; padding:15px;}
+.z1 {
+    width:40%; 
+    float:left; 
+    padding:15px;
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    overflow: auto; /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */
+}
+
+/* Webkit 기반 브라우저용 스크롤바 숨기기 */
+.z1::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox용 스크롤바 숨기기 */
+.z1 {
+    scrollbar-width: none; /* Firefox */
+}
+
 
 
 section#content1 p {
@@ -57,6 +86,7 @@ section#content1 p {
     /* 수직 중앙 정렬 */
     height: 100vh; 
     /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    background-color: lightgray;
 }
 
 .content1 {
@@ -94,11 +124,19 @@ section#content1 p {
     /* 수직 중앙 정렬 */
     height: 10vh; 
     /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    background-color: lightgray;
 }
 .content2title {
-    font-size: 2vw; /* 2vw : Viewport width의 2% */
+    font-size: 3.5vw; /* 2vw : Viewport width의 2% */
     flex-grow: 0; /* 고정 너비를 가지도록 설정 */
     font-weight: bold;
+
+}
+.smalltitle{
+    font-size: 18px; /* 2vw : Viewport width의 2% */
+    flex-grow: 0; /* 고정 너비를 가지도록 설정 */
+    font-weight: bold;
+    padding-bottom: 20px;
 
 }
 
@@ -108,22 +146,124 @@ section#content1 p {
     /* 수평 중앙 정렬 */
     align-items: center; 
     /* 수직 중앙 정렬 */
+    /* height: 45vh; 
+    overflow: auto;  
+    내용 빼고 각 텍스트에 입힘*/
+    background-color: lightgrey;
+
+}
+
+
+.z12, .z13 {
+    flex: 1; /* 내부 콘텐츠를 균등하게 배치 */
+}
+
+.z12 {
+    width:25%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 15px;
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+
+    
+}
+
+.z13 {
+    width: 50%; /* z1과 합쳐서 100%가 되도록 설정 */
+    padding: 15px;
     height: 45vh; 
     /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
     overflow: auto; 
     /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */
-
+    /* display: flex; */
+    /* justify-content: center;  */
+    /* 이미지 중앙 정렬 */
+    /* align-items: center;  */
+    /* 이미지 중앙 정렬 */
 }
 
 /* Webkit 기반 브라우저용 스크롤바 숨기기 */
-.container2::-webkit-scrollbar {
+.z13::-webkit-scrollbar {
     display: none;
 }
 
 /* Firefox용 스크롤바 숨기기 */
-.container2 {
+.z13 {
     scrollbar-width: none; /* Firefox */
 }
+
+.z12 img {
+    width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+    height: auto; /* 비율에 맞게 이미지 높이 조정 */
+}
+
+
+
+
+
+
+
+.l5 {
+    width:15%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 15px;
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+}
+
+.l7 {
+    width:15%;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 15px;
+    padding-left: 0%;
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+}
+
+
+
+.l6 {
+    width: 70%; /* z1과 합쳐서 100%가 되도록 설정 */
+    padding: 15px;
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    overflow: auto; 
+    /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */
+    /* display: flex; */
+    /* justify-content: center;  */
+    /* 이미지 중앙 정렬 */
+    /* align-items: center;  */
+    /* 이미지 중앙 정렬 */
+}
+
+/* Webkit 기반 브라우저용 스크롤바 숨기기 */
+.l6::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox용 스크롤바 숨기기 */
+.l6 {
+    scrollbar-width: none; /* Firefox */
+}
+
+.l5 img {
+    width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+    height: auto; /* 비율에 맞게 이미지 높이 조정 */
+}
+.l7 img {
+    width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+    height: auto; /* 비율에 맞게 이미지 높이 조정 */
+}
+
+
+
+
 
 
 
@@ -136,10 +276,47 @@ section#content1 p {
     width:50%;
     display: flex;
     justify-content: center; 
-    align-items: center; 
+    align-items: flex-start; 
     padding: 15px;
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
 
+    
 }
+
+
+.z6 {
+    width: 50%; /* z1과 합쳐서 100%가 되도록 설정 */
+    padding: 15px;
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    overflow: auto; 
+    /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */
+    /* display: flex; */
+    /* justify-content: center;  */
+    /* 이미지 중앙 정렬 */
+    /* align-items: center;  */
+    /* 이미지 중앙 정렬 */
+}
+
+/* Webkit 기반 브라우저용 스크롤바 숨기기 */
+.z6::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox용 스크롤바 숨기기 */
+.z6 {
+    scrollbar-width: none; /* Firefox */
+}
+
+.z5 img {
+    width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
+    height: auto; /* 비율에 맞게 이미지 높이 조정 */
+}
+
+
+
+
 
 section#content2 p {
     padding:10px;
@@ -157,19 +334,6 @@ section#content2 p {
     margin: 0 20px; /* 화면의 가장자리에 닿지 않도록 여백 추가 */
 }
 
-.z6 {
-    width: 50%; /* z1과 합쳐서 100%가 되도록 설정 */
-    padding: 15px;
-    /* display: flex; */
-    /* justify-content: center;  */
-    /* 이미지 중앙 정렬 */
-    /* align-items: center;  */
-    /* 이미지 중앙 정렬 */
-}
-.z5 img {
-    width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
-    height: auto; /* 비율에 맞게 이미지 높이 조정 */
-}
 
 
 /*--content 3내용-*/
@@ -177,7 +341,22 @@ section#content2 p {
 .z3 {
     width:50%; 
     float:left; 
-    padding:15px;}
+    padding:15px;
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    overflow: auto; 
+    /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */}
+
+    /* Webkit 기반 브라우저용 스크롤바 숨기기 */
+.z3::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox용 스크롤바 숨기기 */
+.z3 {
+    scrollbar-width: none; /* Firefox */
+}
+
 .z3, .z4 {
     flex: 1; /* 내부 콘텐츠를 균등하게 배치 */
 }
@@ -204,7 +383,11 @@ section#content3 p {
     width: 50%; /* z1과 합쳐서 100%가 되도록 설정 */
     display: flex;
     justify-content: center; /* 이미지 중앙 정렬 */
-    align-items: center; /* 이미지 중앙 정렬 */
+    align-items: flex-start; 
+    height: 45vh; 
+    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    overflow: auto; 
+    /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */
 }
 .z4 img {
     width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
@@ -234,6 +417,14 @@ section#content4 p {
 
 
 /*------비디오 content5-----*/
+video {
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+}
+video:hover {
+    filter: grayscale(0%);
+}
+
 
 .container3 {
     display: flex;
@@ -243,6 +434,7 @@ section#content4 p {
     /* 수직 중앙 정렬 */
     height: 45vh; 
     /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+    background-color: lightgray;
 }
 
 
@@ -253,6 +445,7 @@ section#content4 p {
     justify-content: center; 
     align-items: center; 
     padding: 15px;
+
 
 }
 
@@ -280,6 +473,7 @@ section#content5 p {
     /* 이미지 중앙 정렬 */
     /* align-items: center;  */
     /* 이미지 중앙 정렬 */
+
 }
 .z7 video {
     width: 100%; /* 부모 컨테이너의 너비에 맞춰 이미지 크기 조정 */
@@ -297,6 +491,7 @@ section#content5 p {
         justify-content: center; 
         align-items: center; 
         padding: 15px;
+        
     
     }
     
@@ -335,6 +530,12 @@ section#content5 p {
 
 
     /*----포토갤러리-----*/
+.container4{
+margin-top: 500px;    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+margin-bottom: 500px;    /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
+
+}
+
 
     .container3 {
         display: flex;
@@ -343,6 +544,7 @@ section#content5 p {
         align-items: center; 
         /* 수직 중앙 정렬 */
         height: auto; 
+        
         /* 부모 컨테이너의 높이를 전체 뷰포트 높이로 설정 */
         /* overflow: auto;  */
         /* 텍스트가 영역을 벗어나면 스크롤바를 추가 */
